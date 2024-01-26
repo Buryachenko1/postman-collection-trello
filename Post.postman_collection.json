@@ -1,0 +1,1291 @@
+{
+	"info": {
+		"_postman_id": "da2d9809-e902-422e-b801-38ae1dc17396",
+		"name": "Post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19275064"
+	},
+	"item": [
+		{
+			"name": "Get List",
+			"item": [
+				{
+					"name": "GET/post",
+					"item": [
+						{
+							"name": "GetList (correct)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}",
+									"host": [
+										"{{host}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList (incorrect)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}",
+									"host": [
+										"{{host}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Params",
+					"item": [
+						{
+							"name": "Page",
+							"item": [
+								{
+									"name": "GetList (page=0)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?page=0",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0"
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "999",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1000",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (page=1)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?page=1",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "page",
+													"value": "999",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1000",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (page=999)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?page=1000",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "999",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1000"
+												},
+												{
+													"key": "page",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (page=1000)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?page=1000",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "999",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1000"
+												},
+												{
+													"key": "page",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (page=letter)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?page=ABC",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "999",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1000",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "ABC"
+												},
+												{
+													"key": "page",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (page=empty)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "999",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1000",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Limit",
+							"item": [
+								{
+									"name": "GetList (limit=4)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?limit=4",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "4"
+												},
+												{
+													"key": "limit",
+													"value": "5",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "50",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "51",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (limit=5)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}post?limit=5",
+											"host": [
+												"{{host}}post"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "4",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "5"
+												},
+												{
+													"key": "limit",
+													"value": "50",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "51",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (limit=50)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}post?limit=50",
+											"host": [
+												"{{host}}post"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "4",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "5",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "50"
+												},
+												{
+													"key": "limit",
+													"value": "51",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (limit=51)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?limit=51",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "4",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "5",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "50",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "51"
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (limit=letter)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?limit=ABC",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "4",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "5",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "50",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "51",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC"
+												},
+												{
+													"key": "limit",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (limit=empty)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?limit=",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "4",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "5",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "50",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "51",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Created",
+							"item": [
+								{
+									"name": "GetList (created=0)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?created=0",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "created",
+													"value": "0"
+												},
+												{
+													"key": "created",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "2",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (created=1)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?created=1",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "created",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "1"
+												},
+												{
+													"key": "created",
+													"value": "2",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (created=2)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?created=2",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "created",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "2"
+												},
+												{
+													"key": "created",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (created=empty)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?created=",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "created",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "2",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": ""
+												},
+												{
+													"key": "limit",
+													"value": "ABC",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetList (created=letter)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}?limit=ABC",
+											"host": [
+												"{{host}}"
+											],
+											"query": [
+												{
+													"key": "created",
+													"value": "0",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "1",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "2",
+													"disabled": true
+												},
+												{
+													"key": "created",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "limit",
+													"value": "ABC"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Post Create",
+			"item": [
+				{
+					"name": "Create Post",
+					"item": [
+						{
+							"name": "CreatePost (correct)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 55,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Post(incorrect)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 55,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Post (image)",
+					"item": [
+						{
+							"name": "CreatePost (image=number)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomPhoneNumberExt}}\",\n            \"likes\": 55,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (image=array)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": {\n                \"id\": \"60d0fe4f5311236168a109ca\",\n                \"title\": \"ms\"\n            },\n            \"likes\": 55,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (image=empty)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"\",\n            \"likes\": 55,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (image=boolean)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomBoolean}}\",\n            \"likes\": 55,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Post (likes)",
+					"item": [
+						{
+							"name": "CreatePost (like=0)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 0,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (like=2)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 2,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (like=-1)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": -1,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (like=empty)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": \"\", \n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (like=letter)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": \"A\", \n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Post (tags)",
+					"item": [
+						{
+							"name": "CreatePost (tags=url)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 45,\n            \"tags\": \"{{$randomUrl}}\",\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (tags=number)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 84,\n            \"tags\": 45,\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (tags=boolean)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 84,\n            \"tags\": {{$randomBoolean}},\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (tags=empty)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 45,\n            \"tags\": \"\",\n            \"text\": \"adult animal\",\n            \"owner\": \"60d0fe4f5311236168a109ca\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Post (owner)",
+					"item": [
+						{
+							"name": "CreatePost (owner=number)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 45,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"45\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (owner=boolean)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 84,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"{{$randomBoolean}}\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreatePost (owner=empty)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "     {\n            \"image\": \"{{$randomAnimalsImage}}\",\n            \"likes\": 45,\n            \"tags\": [\n                \"animal\",\n                \"dog\",\n                \"golden retriever\"\n            ],\n            \"text\": \"adult animal\",\n            \"owner\": \"\"\n            }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host2}}",
+									"host": [
+										"{{host2}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{app-id}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
